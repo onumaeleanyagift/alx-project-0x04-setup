@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode } from "react";
 
 export interface PageRouteProps {
   pageRoute: string;
@@ -13,4 +13,10 @@ export interface ButtonProps {
 
 export interface LayoutProps {
   children: ReactNode;
+}
+
+export interface CountContextProps {
+  count: number;
+  increment: () => void;
+  decrement: () => void;
 }
