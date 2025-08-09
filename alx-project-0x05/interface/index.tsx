@@ -20,3 +20,9 @@ export interface CountContextProps {
   increment: () => void;
   decrement: () => void;
 }
+
+export interface CountContextProps {
+  count: number;
+  increment: () => void;
+  decrement: () => void;
+}
